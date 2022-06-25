@@ -2,10 +2,12 @@
 
 ## features to be implemented ##
 
-- Dynamic editing
+- row insertion and deletion
 
 - customization options
 
+- new section creation options
+
 ### cuurent Features ###
 
-- can edit the template via html only
+- can edit by tapping on the text you want to edit
