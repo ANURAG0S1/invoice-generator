@@ -11,3 +11,5 @@
 ### cuurent Features ###
 
 - can edit by tapping on the text you want to edit
+
+- can directly print the document
