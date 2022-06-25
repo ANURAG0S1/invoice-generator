@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css" />
     <title>Invoice Generator</title>
   </head>
-  <body>
+  <body id="main" onload="afterLoad()">
+    <div id="menu" class="noprint p-10 abs">
+      <ul>
+        <li onclick="printt()" noedit>print</li>
+      </ul>
+    </div>
     <section class="main p-10 p-hr-4">
       <!-- Header  -->
       <div class="header d-flex p-hr-3 p-vr-4">
@@ -138,5 +143,7 @@
       </div>
     </section>
     <br />
+
+    <script src="/script.js"></script>
   </body>
 </html>
