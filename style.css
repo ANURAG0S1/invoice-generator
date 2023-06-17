@@ -135,17 +135,7 @@ table td {
     top: 0;
 }
 
-.abs-popup {
-    height: 100px;
-    width: 200px;
-    background: rgb(107, 116, 117);
-    border-radius: 8px;
-    padding: 10px;
-    color: white;
-    right: 0px;
-    left: unset !important;
-    animation: anima ease-out 4s;
-}
+
 
 .closeButton {
     position: absolute;
@@ -185,30 +175,22 @@ table td {
     box-shadow: 2px 2px 8px -1px gray;
 }
 
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
 
-@keyframes anima {
-    0% {
-        top: -20%;
-        right: 30px;
-        opacity: 0;
-    }
-
-    30% {
-        top: 40px;
-        right: 30px;
-        opacity: 1;
-    }
-
-    70% {
-        top: 40px;
-        right: 30px;
-        opacity: 1;
-    }
-
-    100% {
-        top: 10px;
-        right: 30px;
-        opacity: 0;
-    }
-
+input {
+    border-radius: 6px;
+    padding: 4px 5px;
+    border: 0px solid #000;
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

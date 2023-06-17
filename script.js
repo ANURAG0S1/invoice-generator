@@ -1,14 +1,3 @@
-var editable = true;
-document.addEventListener("click", (event) => {
-  if (event.target.noedit) {
-  } else if (event.target.hasAttribute("contenteditable")) {
-    let elem = event.target;
-    elem.removeAttribute("contenteditable");
-  } else {
-    event.target.contentEditable = "true";
-  }
-});
-
 function printt() {
   window.print();
 }
@@ -53,13 +42,13 @@ function removeElem(event) {
 }
 
 function afterLoad() {
-  let elem = document.getElementsByTagName("tbody");
-  console.log(elem[0].children);
-  elem[0].children.forEach((element) => {
-    element.addEventListener("click", (event) => {
-      console.log(event.target);
-    });
-  });
+  // let elem = document.getElementsByTagName("tbody");
+  // console.log(elem[0].children);
+  // elem[0].children.forEach((element) => {
+  //   element.addEventListener("click", (event) => {
+  //     console.log(event.target);
+  //   });
+  // });
 }
 
 document.addEventListener(
@@ -69,3 +58,13 @@ document.addEventListener(
   },
   false
 );
+
+function showAddTaskForm() {
+  let popup = document.getElementById("popup");
+  popup.style.display = "block";
+}
+
+function hideAddTaskForm() {
+  let popup = document.getElementById("popup");
+  popup.style.display = "none";
+}
